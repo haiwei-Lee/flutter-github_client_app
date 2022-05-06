@@ -33,9 +33,11 @@ class Global {
     }
 
     profile.cache = profile.cache ?? CacheConfig();
-      ..enable = true;
-      ..maxAge = 3600;
-      ..maxCount = 100;
+    // ..enable = true;
+    // ..maxAge = 3600;
+    // ..maxCount = 100;
   }
-  static saveProfile() => _pref.setString("profile", jsonEncode(profile.toJson()));
+
+  static saveProfile() =>
+      _pref.setString("profile", jsonEncode(profile.toJson()));
 }
