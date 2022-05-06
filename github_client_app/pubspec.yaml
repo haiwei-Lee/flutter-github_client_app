@@ -28,6 +28,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   json_annotation: ^4.5.0
+  shared_preferences: ^2.0.13
   flutter:
     sdk: flutter
 
